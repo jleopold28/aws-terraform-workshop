@@ -1,6 +1,6 @@
 module "server" {
   source = "./server"
-  region       = "${var.region}"
+  region       = "us-east-2"
   num_webs     = "${var.num_webs}"
   identity     = "${var.identity}"
   ami          = "${lookup(var.ami, var.region)}"
